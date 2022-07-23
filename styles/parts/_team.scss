@@ -1,0 +1,83 @@
+  /*Amazin Team Bereich*/
+  .team {
+    background-color: rgb(30, 30, 30);
+    color: rgb(255, 255, 255);
+    padding-top: $landing-padding;
+    padding-bottom: $landing-padding;
+  }
+  
+  .team-heading {
+    font-weight: lighter;
+    margin-bottom: 0px;
+    text-align: center;
+  }
+  
+  .team-subheading {
+    text-align: center;
+    margin-bottom: 50px;
+    color: rgb(138, 138, 138);
+  }
+  
+  /*wäre auch möglich gewesen:
+  .team-image {
+    width: 100%;
+    border-radius: 10000px;
+    border: 5px solid rgb(255, 255, 255);
+  } */
+  .team-image {
+    max-width: 20%;
+    margin-top: 25px;
+
+    @media ($bp-larger-than-phablet) {
+      max-width: 70%;
+      margin-top: 0px;
+    }
+  }
+  
+  .team-image-container {
+    text-align: center;
+  }
+  
+  .team-name {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    @media ($bp-larger-than-phablet) {
+      margin-top: 10px;
+    }
+  }
+  
+  .team-name-desc {
+    text-align: center;
+    color: rgb(138, 138, 138);
+    margin-bottom: 7px;
+  }
+  
+  .team-icons {
+    text-align: center;
+  }
+  
+  .team-icon {
+    color: rgb(255, 255, 255);
+    border: 3px solid rgb(255, 255, 255);
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 100000px;
+    text-align: center;
+    /*float: left;*/
+  }
+  
+  .team-icon .fa {
+    margin-top: 5px;
+  }
+  
+  .team-slogan {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    color: rgb(138, 138, 138);
+  }
+  

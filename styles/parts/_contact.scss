@@ -1,0 +1,79 @@
+  /*Kontakt Bereich*/
+  .contact {
+    background-color: rgb(118, 143, 197);
+    padding-top: $landing-padding;
+    padding-bottom: $landing-padding;
+  }
+  
+  .contact-heading {
+    color: rgb(255, 255, 255);
+    margin-bottom: 15px;
+    font-weight: lighter;
+  }
+  
+  .contact-subheading {
+    color: rgb(255, 255, 255);
+    font-weight: lighter;
+  }
+  
+  .contact-methods {
+    color: rgb(255, 255, 255);
+    list-style-type: none;
+  }
+  
+  .contact-methods li {
+    width: 50%;
+    float: left;
+    font-weight: lighter;
+    height: 2.5em;
+
+    @media ($bp-larger-than-phablet) {
+         width: 100%;
+         float: none;
+    }
+
+    @media ($bp-larger-than-desktop) {
+      width: 50%;
+      float: left;
+    }
+  }
+  
+  .contact-methods .fa {
+    font-size: 150%;
+  }
+  
+  .contact-icon {
+    display: inline-block;
+    width: 40px;
+    text-align: center;
+  }
+  
+  /*Contact mit Animation Start*/
+  .contact-input {
+    width: 100%;
+    margin-bottom: 28px;
+    background-color: rgb(255, 255, 255);
+    -webkit-transition: all 0.33s;
+    transition: all 0.33s;
+  }
+  
+  .contact-input:focus,
+  input.contact-input:focus {
+    border: 1px solid rgb(30, 30, 30);
+    background-color: rgb(230, 230, 230);
+  }
+  
+  /*Contact mit Animation Ende*/
+  .contact-message {
+    height: 151px;
+  }
+  
+  input.contact-submit[type="submit"] {
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 0px;
+  }
+  
+  .contact-form {
+    margin-bottom: 0px;
+  }
+  
