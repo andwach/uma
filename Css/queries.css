@@ -1,0 +1,43 @@
+@media only screen and (max-width: 1024px) {
+    .destination {
+        flex-basis: 50%;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .features-box {
+        padding-bottom: 40px;
+    }
+    .feature {
+        flex-basis: 50%;
+        margin-bottom: 40px;
+    }
+    .team-member img {
+        height: 150px;
+    }
+}
+@media only screen and (max-width: 480px) {
+    body {
+        font-size: 9px;
+    }
+    nav {
+        padding: 30px 30px;
+    }
+    .nav-links {
+        margin-right: 0;
+    }
+    .jumbo {
+        padding: 20px;
+    }
+    .feature {
+        flex-basis: 100%;
+    }
+    .destination {
+        flex-basis: 100%;
+    }
+    .card {
+        height: 200px;
+    }
+    form {
+        padding: 20px;
+    }
+}
