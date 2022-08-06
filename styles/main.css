@@ -27,6 +27,11 @@ body {
     padding: 0;
 }
 
+::selection {
+    color: #014153;
+    background-color: #ED6A4E;
+}
+
 .container {
     max-width: 75rem;
     margin-left: auto;
@@ -51,6 +56,7 @@ body {
     border: none;
     background-color: #ED6A4E;
     font-weight: bold;
+    font-size: 1rem;
     text-decoration: none;
     box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.25); 
 }
@@ -110,6 +116,7 @@ textarea.form__input {
     border-radius: 0.5rem;
     width: 20rem;
     resize: none;
+    width: 100%;
 }
 
 
@@ -123,7 +130,7 @@ textarea.form__input {
 }
 
 .form__input-container {
-    padding-bottom: 0.5rem;
+    padding-bottom: 1rem;
     text-align: center;
 }
 
@@ -680,10 +687,30 @@ textarea.form__input {
     background-color: #ED6A4E;
 }
 
+.contact::selection,
+.contact ::selection {
+    color: #ED6A4E;
+    background-color: #014153;
+}
+
+
+@media (min-width: 62em) {
+    .contact::after {
+        content: "";
+        display: block;
+        background-color: #014153;
+        width: 7.5rem;
+        height: 0.25rem;
+        margin-top: 3rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 .contact__logo {
     opacity: 0.5;
     display: block;
-    width: 20rem;
+    width: 18rem;
     margin-left: auto;
     margin-right: auto;
 }
@@ -691,8 +718,9 @@ textarea.form__input {
 .contact__cta {
     margin: 0;
     font-weight: normal;
-    padding-top: 1rem;
-    font-size: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
     color: white;
     text-align: center;
 }
@@ -706,7 +734,12 @@ textarea.form__input {
     color: #014153;
     text-align: center;
     padding: 0.5rem 1rem;
-    font-size: 2.5rem;
+    font-size: 1.75rem;
+    text-decoration: none;
+}
+
+.contact__phone:hover {
+    text-decoration: underline;
 }
 
 .contact__info::after {
@@ -728,7 +761,14 @@ textarea.form__input {
         display: flex;
         flex-direction: row;
 
-        background-image: linear-gradient(90deg, transparent 49%, rgba(255, 255, 255, 0.5) 49%, rgba(255, 255, 255, 0.5) 51%, transparent 51%);
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+
+        background-image: linear-gradient(90deg, 
+        transparent calc(50% - 0.125rem),
+         rgba(255, 255, 255, 0.5) calc(50% - 0.125rem),
+          rgba(255, 255, 255, 0.5) calc(50% + 0.125rem), 
+           transparent calc(50% + 0.125rem));
     }
 }
 
@@ -738,8 +778,54 @@ textarea.form__input {
     }
 }
 
+.contact__form {
+    max-width: 25rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 @media (min-width: 62em) {
     .contact__form {
         flex: 0 0 50%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        max-width: initial;
+        margin-left: initial;
+        margin-right: initial;
     }
 }
+
+.contact__form-submit-container {
+    text-align: center;
+}
+@media (min-width: 62em) {
+    .contact__form-submit-container {
+      text-align: right;
+  }
+}
+
+.footer {
+    background-color: #ED6A4E;
+    padding-bottom: 3rem;
+}
+
+.footer::selection,
+.footer ::selection {
+    color: #ED6A4E;
+    background-color: #014153;
+}
+
+.footer__text {
+    margin: 0;
+    text-align: center;
+    color: #014153;
+  }
+
+ .footer__link {
+    color: #014153;
+    text-decoration: none;
+  }
+
+  .footer__link:hover {
+    text-decoration: underline;
+  }
