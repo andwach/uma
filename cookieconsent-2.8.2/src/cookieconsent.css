@@ -520,7 +520,7 @@ CookieConsent settings modal
     color: #fff;
     color: var(--cc-btn-primary-text);
     background: #253b48;
-    background: var(--cc-btn-primary-bg);
+    background: white;
 }
 
 #c-bns.swap button:first-child{
